@@ -3,11 +3,11 @@
 Implementazione del metodo regula flasi per il calcolo degli zeri di una funzione $(f(\alpha) = 0)$
 
 ## Idea generale
-L'algoritmo di basa sulla ripetuta divisione di un intervallo dato in input, inizialmente si verificano le ipotesi del [teorema di Bolzano](https://it.wikipedia.org/wiki/Teorema_di_Bolzano), se soddisfatte si procederà con la divisione dell'intervallo [a, b] in due semi-intervalli $[a, x^k]$ e $[x^k , b]$ dove $x^k$ è il punto di intersezione con l'asse delle ascisse ottenuto tracciando un segmento che congiunge $f(a)$ e $f(b)$, si andranno nuovamente a valutare le ipotesi del teorema e nell'intervallo dove saranno soddisfatte si procederà nuovamente con la divisione e così via fino a che non si avrà una buona approssimazione del valore.
+L'algoritmo di basa sulla ripetuta divisione di un intervallo dato in input, inizialmente si verificano le ipotesi del [teorema di Bolzano](https://it.wikipedia.org/wiki/Teorema_di_Bolzano), se soddisfatte si procederà con la divisione dell'intervallo [a, b] in due semi-intervalli $[a, x^{(k)}]$ e $[x^{(k)} , b]$ dove $x^{(k)}$ è il punto di intersezione con l'asse delle ascisse ottenuto tracciando un segmento che congiunge $f(a)$ e $f(b)$, si andranno nuovamente a valutare le ipotesi del teorema e nell'intervallo dove saranno soddisfatte si procederà nuovamente con la divisione e così via fino a che non si avrà una buona approssimazione del valore.
 
 ## Iterata generale
 
-$$ x^k = \frac{f(b^{(k)})a^{(k)} - f(a^{(k)})b^{(k)}}{f(b^{(k)})-f(a^{(k)})}$$
+$$ x^{(k)} = \frac{f(b^{(k)})a^{(k)} - f(a^{(k)})b^{(k)}}{f(b^{(k)})-f(a^{(k)})}$$
 
 ----
 
