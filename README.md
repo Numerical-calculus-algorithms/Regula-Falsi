@@ -22,9 +22,9 @@ siano, inoltre
 <div align="center"><img src="img/Cos.png" /></div>
 
 Essendo la funzione continua, le ipotesi del teorema di Bolzano sono rispettate e deve esservi una radice compresa tra $[1, 2]$, quindi 
-$$x^0 = \frac{\cos(2)-2\cos(1)}{\cos(2)-\cos(1)} \approx 1.56... $$
+$$x^{(0)} = \frac{\cos(2)-2\cos(1)}{\cos(2)-\cos(1)} \approx 1.56... $$
 La funzione, quindi, sarà valutata, $f(1.56) = cos(1.56) \approx 0.0107$, essendo un valore positivo si andrà a considerare l'intervallo $[1.56, 2]$ dato che $f(1.56)*f(2) < 0$, quindi la prissima iterata sarà
-$$x^1 = \frac{1.56\cos(2)-2\cos(1.56)}{\cos(2)-\cos(1.56)} \approx 1.57... $$
+$$x^{(1)} = \frac{1.56\cos(2)-2\cos(1.56)}{\cos(2)-\cos(1.56)} \approx 1.57... $$
 
 Oss. L'algoritmo si ferma quando trova un'approssimazione della radice al disotto di una tolleranza (input) oppure quando raggionge il massimo numero di passi stabilito (input).
 
